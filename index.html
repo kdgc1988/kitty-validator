@@ -255,7 +255,7 @@
             resultTxt.classList.remove("follower")
             resultTxt.value = "";
 
-            fetch(`https://82dc-95-155-116-145.eu.ngrok.io/checkTwitterHandle/${txt.value.trim()}`)
+            fetch(`http://145.239.90.197:50111/checkTwitterHandle/${txt.value.trim()}`)
                 .then(function (response) {
                     if (response.status !== 200) {
 
