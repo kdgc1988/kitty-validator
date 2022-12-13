@@ -253,8 +253,9 @@
 
             resultTxt.classList.remove("not-follower")
             resultTxt.classList.remove("follower")
+            resultTxt.value = "";
 
-            fetch(`https://c81d-95-155-116-145.eu.ngrok.io/checkTwitterHandle/${txt.value.trim()}`)
+            fetch(`https://82dc-95-155-116-145.eu.ngrok.io/checkTwitterHandle/${txt.value.trim()}`)
                 .then(function (response) {
                     if (response.status !== 200) {
 
